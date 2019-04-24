@@ -7,9 +7,10 @@ function sleep(seconds) {
 // document.getElementsByClassName("top_couponCenter_button_20170105")[0].click();
 // sleep(5);
 
-var links = document.getElementsByClassName("middle_getIt_button_20170105");
-for (i = 0; i < links.length; i++) {
-    var link = links[i];
+var divs = document.getElementsByClassName("get-btn");
+for (i = 0; i < divs.length; i++) {
+    var div = divs[i];
+    var link = div.firstChild;
     link.click();
 }
 
